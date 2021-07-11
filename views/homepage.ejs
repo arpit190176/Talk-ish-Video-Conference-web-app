@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Talk-ish</title>
+        <link rel="stylesheet" href="style1.css">
+        <script>
+            function roomCarrier(){
+                const enteredId=document.getElementById("recordId").value;
+                window.location.href=`/${enteredId}`;
+                return false;
+            };
+        </script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div id="header"  style="position: relative;">
+            <img class="logo" src="Talk-ish.png">
+            <h1 style="text-align: center" class="pageTitle">Video Conference App</h1>
+            </div>
+        </nav>
+        <div class="entryBox">
+            <h1>Hey there!</h1>
+            <input type="button" onclick="location.href=`/newRoom`" class="btn" value="Create brand new room!">
+                       
+            <!-- <a href="newRoom" class="button" >Create brand new room!</a> -->
+            <br><br><h2 style="text-align:center">OR</h2><br>
+            <form onsubmit="return roomCarrier()">
+                <div class="textbox">
+                    Enter room ID to join:<br>
+                    <input type="text" id="recordId">
+                </div>
+
+            </form>
+        </div>
+            
+    </body>
+</html>
