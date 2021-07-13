@@ -1,5 +1,5 @@
 # Talk-ish-Video-Conference-web-app
-MICROSOFT ENGAGE'21 MENTORSHIP PROGRAM PROJECT
+
 
 1.Talk-ish is a video conference web application allowing multiple users to connect and have video conversation. Users can create new rooms for themselves or join existing rooms by entering room ID in the homepage of the app.
 
